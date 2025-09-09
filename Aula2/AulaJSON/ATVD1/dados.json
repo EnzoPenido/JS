@@ -1,0 +1,13 @@
+{
+  "nome": "Enzo",
+  "idade": 16,
+  "cidade": "Guarulhos",
+  "endereço": {
+    "rua": "teste",
+    "seila": "seila"
+  },
+  "telefones": [
+    123123123,
+    123123123
+  ]
+}

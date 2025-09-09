@@ -1,0 +1,46 @@
+{
+  "itens": [
+    {
+      "nome": "Paçoca",
+      "preco": 1,
+      "descricao": "Paçoca paçoquita",
+      "categoria": "Doces"
+    },
+    {
+      "nome": "Abacaxi",
+      "preco": 5,
+      "descricao": "Abacaxi selecionado",
+      "categoria": "Frutas"
+    },
+    {
+      "nome": "Monster Energy Pacific Punch",
+      "preco": 13,
+      "descricao": "Energético da marca Monster Energy",
+      "categoria": "Bebidas"
+    },
+    {
+      "nome": "Coca-Cola",
+      "preco": 7,
+      "descricao": "Refrigerante sabor cola",
+      "categoria": "Bebidas"
+    },
+    {
+      "nome": "Laranja",
+      "preco": 4,
+      "descricao": "Laranja pera",
+      "categoria": "Frutas"
+    },
+    {
+      "nome": "Guarda chuva",
+      "preco": 20,
+      "descricao": "Guarda chuva preto",
+      "categoria": "Utensílios"
+    },
+    {
+      "nome": "RTX 5090",
+      "preco": 20000,
+      "descricao": "Placa de vídeo Nvidia RTX 5090 12Gb DirectX 12",
+      "categoria": "Hardware"
+    }
+  ]
+}

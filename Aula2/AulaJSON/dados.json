@@ -1,0 +1,14 @@
+{
+    "nome": "Enzo",
+    "idade": 16,
+    "endereço": {
+        "rua": "teste",
+        "cidade": "São Caetano Do Sul"
+    },
+    "telefones": [
+        "11 9999-9999",
+        "11 8888-8888"
+    ],
+    "ativo": true,
+    "nulo": null
+}
