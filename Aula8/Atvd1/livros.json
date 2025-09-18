@@ -1,17 +1,17 @@
 [
-    {
-        "id": 1,
-        "titulo": "O Senhor Dos Anéis",
-        "Autor": "J.R.R. Tolkien"
-    },
-    {
-        "id": 2,
-        "titulo": "O Guia do Mochileiro das Galáxias",
-        "Autor": "Douglas Adams"
-    },
-    {
-        "id": 3,
-        "titulo": "1984",
-        "Autor": "George Orwell"
-    }
+  {
+    "id": 1,
+    "titulo": "O Senhor Dos Anéis",
+    "Autor": "J.R.R. Tolkien"
+  },
+  {
+    "id": 2,
+    "titulo": "O Guia do Mochileiro das Galáxias",
+    "Autor": "Douglas Adams"
+  },
+  {
+    "id": 3,
+    "titulo": "1984",
+    "Autor": "George Orwell"
+  }
 ]
