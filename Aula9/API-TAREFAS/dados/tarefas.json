@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "descricao": "Estudar Node.js e Promises",
+    "status": "concluída"
+  },
+  {
+    "id": 2,
+    "descricao": "Criar a API de To-Do List",
+    "status": "pendente"
+  },
+  {
+    "id": 5,
+    "descricao": "Fazer o curl no servidor",
+    "status": "pendente"
+  }
+]
