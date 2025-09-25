@@ -2,9 +2,11 @@ const express = require('express');
 const app = express();
 const port = 3000;
 const rotasTarefas = require('./rotas/rotasTarefas')
+const logger = require('./middlewares/logger');
 
 app.use(express.json())
 
+app.use(logger);
 app.use('/tarefas', rotasTarefas)
 
 app.get('/', (req,res)=>{
