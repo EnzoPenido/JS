@@ -4,7 +4,6 @@ const router = express.Router();
 const app = express();
 const auth = require('../middlewares/autenticacao');
 const logger = require('../middlewares/logger');
-app.use(logger);
 
 router.post('/', auth, express.json(), (req, res) => {
     const conteudo = req.body
