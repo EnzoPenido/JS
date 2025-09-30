@@ -3,10 +3,17 @@ const fs = require('fs');
 const router = express.Router();
 const app = express();
 const auth = require('../middlewares/autenticacao');
-const logger = require('../middlewares/logger');
+
 
 router.post('/', auth, express.json(), (req, res) => {
     const conteudo = req.body
+    if (JSON.stringify(conteudo) === '{}' || conteudo.descricao.length < 5) {
+        return res.status(400).send('Conteúdo inválido.');
+    }
+    else if (conteudo.status != 'concluida' && JSON.stringify(conteudo.status) != 'pendente' && conteudo.status === '') {
+            conteudo.status = 'pendente';
+        }
+
     fs.readFile('./dados/tarefas.json', 'utf8', (err, data) => {
         if (err) return res.status(500).send('Erro ao ler o arquivo de tarefas.');
         const tarefasArray = JSON.parse(data);
@@ -42,6 +49,13 @@ router.delete('/:id', auth, (req, res) => {
 router.put('/:id', auth, express.json(), (req, res) => {
     const id = parseInt(req.params.id);
     const novoConteudo = req.body;
+    if (!novoConteudo || JSON.stringify(novoConteudo) === '{}' || novoConteudo.descricao.length < 5) {
+        conteudo.status = 'pendente';
+        return res.status(400).send('Conteúdo inválido.');
+    }
+    else if (novoConteudo.status != 'concluida' && JSON.stringify(novoConteudo.status) != 'pendente' && novoConteudo.status === '') {
+            novoConteudo.status = 'pendente';
+        }
     fs.readFile('./dados/tarefas.json', 'utf8', (err, data) => {
         if (err) return res.status(500).send('Erro ao ler o arquivo de tarefas.');
         const tarefasArray = JSON.parse(data);
